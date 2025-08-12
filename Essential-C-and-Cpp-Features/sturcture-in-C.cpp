@@ -1,15 +1,19 @@
-/* in c and c++ structure is a user define data type that gorup multiple related varable under a 
+/*
+In C and C++, a structure is a user-defined data type that groups multiple related variables under a 
 single name.
-the member of sturcture can be use using dot operator using class name.
--> is use with pointer to access the member of structre.
+The members of a structure can be accessed using the dot (.) operator with the structure variable.
+The arrow (->) operator is used with a pointer to access members of a structure.
 */
+
 #include<stdio.h>
+
 struct Student{
 	int rollNo;
 	char name[25];
 	char dep[15];
 	char Grade;
 };
+
 int main(){
 	struct Student s1={21,"inam-ul-haq","BSSE",'A'};
 	printf("Student information\n");
