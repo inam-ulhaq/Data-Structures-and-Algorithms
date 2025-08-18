@@ -1,6 +1,4 @@
-// Title: Tail recursion
-// Author: Inam Ul Haq
-// Description:
+// Tail recursion:
 // A function is tail recursive if the recursive call is the last statement in that function.
 // i.e. after the recursive calls, there is no more work to do.
 
