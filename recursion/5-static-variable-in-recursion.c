@@ -1,17 +1,15 @@
-// Titile:Static Variable in Recursion
-// Author:Inam Ul Haq
+// Title: Static Variable in Recursion
+// Author: Inam Ul Haq
 // Description:
-// A static variable is not stored in stack frame. It stored in the data segment of memory. That mean
-// only one copy of static variable exits for the whole program.
+// A static variable is not stored in the stack frame. It is stored in the data segment of memory.
+// This means only **one copy** of a static variable exists for the whole program, regardless of 
+// how many times the function is called.
 
-// Recursion
-//     for every function call new stack frame is created. So every thing part of the stack frame will
-// create new copy.
-// 1- Local variable: new copy created with each function call(stored in stack).
-// 2- Static variable: not part of the stack, no new copy will be created and the same single copy share
-// by all calls.
-// So a static variable will not reset no every recursive call.
-// it will keep the current or modified value and use it in the next call.
+// Recursion notes:
+// For every function call, a new stack frame is created. Therefore:
+// 1. Local variables: A new copy is created for each function call (stored in stack).
+// 2. Static variables: Not part of the stack, so no new copy is created. All calls **share the same variable**.
+// Hence, a static variable will **retain its value** across recursive calls.
 
 #include <stdio.h>
 
