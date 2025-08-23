@@ -1,4 +1,4 @@
-//  Title: Tree Recusion
+//  Title: Tree Recursion
 //  Author: Inam Ul Haq 
 //  Description:
 //   if a recursive function calling itself more than once within the body
