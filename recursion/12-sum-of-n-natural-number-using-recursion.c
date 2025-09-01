@@ -2,9 +2,11 @@
 // Author: Inam Ul Haq 
 // Description:
 // if we want to sum first 5 natural numbers then we can do it like this:
-// Sum(5)= 1 + 2 + 3 + 4 + 5
+// 1 + 2 + 3 + 4 + 5
+// in samillar way the sum of frist n natural numbers is 
+// 1 + 2 + 3 + ... + n
 
-// in same we if we want to sum first N natural numbers then we can do it like this:
+// now define recurance relaation for this is:
 // sum(n) = 1 + 2 + 3 ....+ (n-1) + n
 // sum(n) = sum(n-1) + n
 
@@ -31,3 +33,29 @@ int main(){
     printf("Sum of %d natural numbers: %d",n,total);
     return 0;
 }
+
+// Time complexity 
+// lets
+// "fun(n)" taking time of T(n)
+//
+// then form the recurance relation 
+//
+// case 1: n==0
+//    T(n) = 0
+//
+// case 2: n>1
+//    T(n) = T(n-1) + 1
+//
+// expanding
+//    T(n) = T(n-1) + 1
+//    T(n) = T(n-2) + 2
+//    T(n) = T(n-3) + 3
+//    ...
+//    T(n) = T(n-k) + k 
+// assume that k-n=0
+//    then k=n 
+// so,
+//    T(n) = T(n-n) + n 
+//    T(n) = T(0) + n 
+//    T(n) = 1 + n 
+//    T(n) = O(n)

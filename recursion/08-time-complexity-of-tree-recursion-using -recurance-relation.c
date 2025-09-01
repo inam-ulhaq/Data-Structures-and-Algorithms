@@ -23,7 +23,7 @@ int main(){
 case 1: n>0
     -The check "if(n>0)" take 1 unite of time.
     -then it call treeRecFun(n-1) which take T(n-1)
-    -and agin the treeRecFun(n-1) is calling which take T(n-1)
+    -and again the treeRecFun(n-1) is calling which take T(n-1)
     =>T(n)=T(n-1)+T(n-1)+1
 
 case 2: n==0
